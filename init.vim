@@ -70,3 +70,9 @@ inoremap <expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>
 
 " Mapping for opening/closing NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
+
+" Gutentags
+" Don't load me if there's no ctags file
+if !executable('ctags')
+    let g:gutentags_dont_load = 1
+endif
