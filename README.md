@@ -6,12 +6,17 @@ My simple customized NeoVim configuration and installation guide for me in the f
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-2. Install `nvim`(NeoVim) via `homebrew`. (Visit https://brew.sh/ for more detail)
+2. Install `nvim`(NeoVim) via `homebrew`. (Visit https://brew.sh/ for more detail), and then, install (neo)vim plug
 ```
+# Install neovim
 brew install neovim
 export PATH="$HOME/home/linuxbrew/.linuxbrew/bin/nvim:$PATH"
 source ~/.bashrc
 echo $PATH
+
+# Install Plugin
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 3. Create a `nvim` configuration file at `/$HOME/.config/nvim/init.vim` (Copy `<REPOSITORY>/init.vim`'s full content)
 
