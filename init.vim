@@ -18,9 +18,9 @@ Plug 'tpope/vim-surround'                                 " Surround text object
 Plug 'ludovicchabant/vim-gutentags'                       " Tag generation for code navigation
 Plug 'shougo/denite.nvim'                                 " Powerful search and filtering interface
 
-" Tabline and icons
-Plug 'nvim-tree/nvim-web-devicons'                        " Icons for filetypes and buffers
-Plug 'lewis6991/gitsigns.nvim'                            " Git status in gutter
+" Orderable tabline plugin
+Plug 'nvim-tree/nvim-web-devicons'                        " OPTIONAL: for file icons
+Plug 'lewis6991/gitsigns.nvim'                            " OPTIONAL: for git status
 Plug 'romgrk/barbar.nvim'                                 " Tabline plugin
 
 " File format plugins for programming languages
@@ -57,6 +57,25 @@ set ignorecase                " Case-insensitive search
 set wrap                      " Wrap long lines
 set scrolloff=8               " Minimum lines to keep above/below the cursor
 syntax on                     " Enable syntax highlighting
+
+" Barbar (tabline) key mappings
+nnoremap <A-,> :BufferPrevious<CR>
+nnoremap <A-.> :BufferNext<CR>
+nnoremap <A-<> :BufferMovePrevious<CR>
+nnoremap <A->> :BufferMoveNext<CR>
+nnoremap <A-1> :BufferGoto 1<CR>
+nnoremap <A-2> :BufferGoto 2<CR>
+nnoremap <A-3> :BufferGoto 3<CR>
+nnoremap <A-4> :BufferGoto 4<CR>
+nnoremap <A-5> :BufferGoto 5<CR>
+nnoremap <A-6> :BufferGoto 6<CR>
+nnoremap <A-7> :BufferGoto 7<CR>
+nnoremap <A-8> :BufferGoto 8<CR>
+nnoremap <A-9> :BufferGoto 9<CR>
+nnoremap <A-0> :BufferLast<CR>
+nnoremap <A-p> :BufferPin<CR>
+nnoremap <A-c> :BufferClose<CR>
+nnoremap <A-s-c> :BufferRestore<CR>
 
 " Lualine configuration with date and time component
 lua << END
