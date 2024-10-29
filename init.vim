@@ -29,6 +29,10 @@ Plug 'honza/vim-snippets'                                 " Code snippets for ma
 Plug 'rust-lang/rust.vim'                                 " Rust support
 Plug 'fatih/vim-go'                                       " Go development plugin
 
+" Telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
+
 call plug#end()
 
 " Basic configurations for improved usability
