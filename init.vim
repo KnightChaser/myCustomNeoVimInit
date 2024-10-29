@@ -19,6 +19,11 @@ Plug 'tpope/vim-surround'                                 " Surround text object
 Plug 'ludovicchabant/vim-gutentags'                       " Tag generation for code navigation
 Plug 'shougo/denite.nvim'                                 " Powerful search and filtering interface
 
+" Orderable tabline plugin
+Plug 'nvim-tree/nvim-web-devicons'                        " OPTIONAL: for file icons
+Plug 'lewis6991/gitsigns.nvim'                            " OPTIONAL: for git status
+Plug 'romgrk/barbar.nvim'
+
 " File format plugins for programming languages
 Plug 'honza/vim-snippets'                                 " Code snippets for many languages
 Plug 'rust-lang/rust.vim'                                 " Rust support
