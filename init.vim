@@ -23,6 +23,23 @@ Plug 'shougo/denite.nvim'                                 " Powerful search and 
 Plug 'nvim-tree/nvim-web-devicons'                        " OPTIONAL: for file icons
 Plug 'lewis6991/gitsigns.nvim'                            " OPTIONAL: for git status
 Plug 'romgrk/barbar.nvim'
+nnoremap <A-,> <Cmd>BufferPrevious<CR>
+nnoremap <A-.> <Cmd>BufferNext<CR>
+nnoremap <A-<> <Cmd>BufferMovePrevious<CR>
+nnoremap <A->> <Cmd>BufferMoveNext<CR>
+nnoremap <A-1> <Cmd>BufferGoto 1<CR>
+nnoremap <A-2> <Cmd>BufferGoto 2<CR>
+nnoremap <A-3> <Cmd>BufferGoto 3<CR>
+nnoremap <A-4> <Cmd>BufferGoto 4<CR>
+nnoremap <A-5> <Cmd>BufferGoto 5<CR>
+nnoremap <A-6> <Cmd>BufferGoto 6<CR>
+nnoremap <A-7> <Cmd>BufferGoto 7<CR>
+nnoremap <A-8> <Cmd>BufferGoto 8<CR>
+nnoremap <A-9> <Cmd>BufferGoto 9<CR>
+nnoremap <A-0> <Cmd>BufferLast<CR>
+nnoremap <A-p> <Cmd>BufferPin<CR>
+nnoremap <A-c> <Cmd>BufferClose<CR>
+nnoremap <A-s-c> <Cmd>BufferRestore<CR>
 
 " File format plugins for programming languages
 Plug 'honza/vim-snippets'                                 " Code snippets for many languages
