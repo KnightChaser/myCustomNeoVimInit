@@ -19,4 +19,16 @@ echo $PATH
 4. Install all plugins described in `init.vim`. Open `nvim` and hit the command `:PlugInstall`
 ![image](https://github.com/user-attachments/assets/d0921969-2ffe-491d-b483-30372bd897a5)
 
-5. ENJOY!
+5. You'll have to install and use Nerd Font for `barbar` plugins(multiple tab while editing files in `nvim`). Here is the command of directly installing required fonts.
+```bash
+# Install Nerdfont for barbar packages, including the tabline
+wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip \
+&& cd ~/.local/share/fonts \
+&& unzip JetBrainsMono.zip \
+&& rm JetBrainsMono.zip \
+&& fc-cache -fv
+```
+
+6. ENJOY! (It'll work with WSL2 as well.)
+![image](https://github.com/user-attachments/assets/b8957d27-1756-49da-8bad-ec639f98449b)
+
