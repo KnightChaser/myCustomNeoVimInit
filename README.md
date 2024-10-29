@@ -37,5 +37,5 @@ sudo apt-get install fd-find
 
 7. ENJOY! (It'll work with WSL2 as well.)
 
-![image](https://github.com/user-attachments/assets/b8957d27-1756-49da-8bad-ec639f98449b)
+![image](https://github.com/user-attachments/assets/4b54929a-e7b4-4156-a235-d009180f7284)
 
