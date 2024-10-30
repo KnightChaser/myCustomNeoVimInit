@@ -6,13 +6,19 @@ My simple customized NeoVim configuration and installation guide for me in the f
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-2. Install `nvim`(NeoVim) via `homebrew`. (Visit https://brew.sh/ for more detail), and then, install (neo)vim plug
+2. Install `nvim`(NeoVim) via `homebrew`. (Visit https://brew.sh/ for more detail), and then, install nodejs(for CoC) and (neo)vim plug.
+   
+**IMPORTANT NOTE**: Using NVIM nightly is encouraged to support extensive range of NVIM extensions. Use `bob` NVIM version manager(https://github.com/MordechaiHadad/bob) instead for better usability.
 ```
 # Install neovim
 brew install neovim
 export PATH="$HOME/home/linuxbrew/.linuxbrew/bin/nvim:$PATH"
 source ~/.bashrc
 echo $PATH
+
+# Install nodejs
+curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt-get install -y nodejs    
 
 # Install Plugin
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -27,6 +33,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ![image](https://github.com/user-attachments/assets/d0921969-2ffe-491d-b483-30372bd897a5)
 
 6. Exit nvim, and return to the `bash`. Install required packages.
+(You may have to manually install nerd font family(which one you'd like to use) from the website(https://www.nerdfonts.com/) to apply it on your terminal.)
 ```bash
 # Install Nerdfont for barbar packages, including the tabline
 wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip \
