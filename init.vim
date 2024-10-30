@@ -58,6 +58,23 @@ set wrap                      " Wrap long lines
 set scrolloff=8               " Minimum lines to keep above/below the cursor
 syntax on                     " Enable syntax highlighting
 
+" Additional settings for terminal modes
+nnoremap <leader>tt :split term://$SHELL<CR>
+nnoremap <leader>tv :vsplit term://$SHELL<CR>
+
+" Key mappings for navigating between terminal and normal mode
+tnoremap <Esc> <C-\><C-n>  " Use Esc to exit terminal mode into normal mode
+
+" Updated key mappings for navigating between windows including terminal mode
+tnoremap <C-h> <C-\><C-n>:wincmd h<CR>
+tnoremap <C-j> <C-\><C-n>:wincmd j<CR>
+tnoremap <C-k> <C-\><C-n>:wincmd k<CR>
+tnoremap <C-l> <C-\><C-n>:wincmd l<CR>
+nnoremap <C-h> :wincmd h<CR>
+nnoremap <C-j> :wincmd j<CR>
+nnoremap <C-k> :wincmd k<CR>
+nnoremap <C-l> :wincmd l<CR>
+
 " Barbar (tabline) key mappings
 nnoremap <A-,> :BufferPrevious<CR>
 nnoremap <A-.> :BufferNext<CR>
