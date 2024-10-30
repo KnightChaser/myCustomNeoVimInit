@@ -57,3 +57,5 @@ sudo apt-get install fd-find
 - For **CoC(automatic code completion/suggestion/IntelliSense)**, proper language packages should be installed. For example, C language, `clangd` (and `gcc` or other compilation tools) are required.
 
 ![image](https://github.com/user-attachments/assets/e3d0775a-d58b-4a75-96dd-e0add247727c)
+
+- Visit NVIM copilot setup(https://github.com/github/copilot.vim) for AI coding assistance!
