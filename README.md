@@ -51,3 +51,9 @@ sudo apt-get install fd-find
 
 ![image](https://github.com/user-attachments/assets/4b54929a-e7b4-4156-a235-d009180f7284)
 
+
+
+### FURTHER NOTES
+- For **CoC(automatic code completion/suggestion/IntelliSense)**, proper language packages should be installed. For example, C language, `clangd` (and `gcc` or other compilation tools) are required.
+
+![image](https://github.com/user-attachments/assets/e3d0775a-d58b-4a75-96dd-e0add247727c)
