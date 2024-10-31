@@ -1,5 +1,6 @@
-# myNeoVimCustom
-My simple customized NeoVim configuration and installation guide for me in the future!
+# myCustomNeoVimInit
+> Note: THIS VERSION OF NEOVIM CUSTOMIZATION IS BASED ON **`~/.config/nvim/init.vim`**, which is not based on `lazy.vim` which uses nvim.
+My simple customized NeoVim configuration and installation guide for me in the future! So, I moved my configuration with `lazy.vim` --> https://github.com/KnightChaser/myCustomLazyVim
 
 ### PROCEDURES
 1. Install `brew`(homebrew) if it's not installed on the system
